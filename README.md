@@ -1,7 +1,8 @@
 # Useful links
 * Check that you have an organization and a space: https://console.bluemix.net/account/organizations
 * Download CLI: https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use
-* Read HOWTO: https://console.bluemix.net/docs/openwhisk/openwhisk_actions.html#creating-docker-actions
+* Actions HOWTO: https://console.bluemix.net/docs/openwhisk/openwhisk_actions.html#creating-docker-actions
+* Private registry HOWTO: https://console.bluemix.net/docs/services/Registry/index.html#index
 
 # TL;DR
     1$ ibmcloud login
