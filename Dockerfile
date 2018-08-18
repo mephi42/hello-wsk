@@ -1,2 +1,2 @@
-FROM python
+FROM openwhisk/dockerskeleton
 COPY fs/ /
