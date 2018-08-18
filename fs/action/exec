@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+import sys
+import json
+
+if len(sys.argv) > 1:
+    j = json.loads(sys.argv[1])
+else:
+    j = {}
+json.dump({'in': j, 'out': 'hello'}, sys.stdout)
+print('')
