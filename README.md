@@ -20,6 +20,17 @@
     $ ibmcloud fn activation list
     $ ibmcloud fn activation logs <id>
 
+# Private images
+
+Warning: this does not work yet.
+
+    $ ibmcloud plugin install container-registry -r Bluemix
+    $ ibmcloud cr login
+    $ ibmcloud cr namespace-add mephi42
+
+    $ docker build -t registry.eu-gb.bluemix.net/mephi42/hello-wsk .
+    $ docker push registry.eu-gb.bluemix.net/mephi42/hello-wsk
+
 # Pitfalls
 * Use `openwhisk/dockerskeleton` as a base or reverse engineer its entry point `/actionProxy/actionproxy.py`.
   `ibmcloud fn action create hello-world --docker hello-world` and the like will silently hang!
