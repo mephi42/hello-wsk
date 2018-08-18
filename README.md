@@ -14,3 +14,14 @@
     7$ ibmcloud fn action update hello-wsk --docker mephi42/hello-wsk
     8$ ibmcloud fn action invoke --result hello-wsk --param foo bar
     # goto 4
+
+# Debugging
+
+    $ ibmcloud fn activation list
+    $ ibmcloud fn activation logs <id>
+
+# Pitfalls
+* Use `openwhisk/dockerskeleton` as a base or reverse engineer its entry point `/actionProxy/actionproxy.py`.
+  `ibmcloud fn action create hello-world --docker hello-world` and the like will silently hang!
+* If input JSON is small, it is passed via `argv[1]`, otherwise via `stdin`.
+* The last `stdout` line must contain a JSON response. Other `stdout` lines, and all `stderr` lines are simply logged.
