@@ -3,6 +3,8 @@
 ## Summary
 Publish an image on [Docker Hub](https://hub.docker.com) and run it as an [IBM Cloud Function](https://console.bluemix.net/openwhisk).
 
+Requires disclosing all code.
+
 ## Useful links
 * [Check that you have an organization and a space](https://console.bluemix.net/account/organizations)
 * [Download CLI](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use)

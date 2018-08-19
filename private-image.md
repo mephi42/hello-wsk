@@ -3,6 +3,10 @@
 ## Summary
 Publish an image on [IBM Cloud Container Registry](https://console.bluemix.net/containers-kubernetes/registry/private) and run it as an [IBM Cloud Function](https://console.bluemix.net/openwhisk).
 
+Does not require disclosing the code.
+
+Does not work yet due to OpenWhisk technical limitations.
+
 ## Useful links
 * [Private registry HOWTO](https://console.bluemix.net/docs/services/Registry/index.html#index)
 
