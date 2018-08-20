@@ -15,7 +15,7 @@ Requires disclosing all code.
     2$ ibmcloud target -r us-south --cf  # A region must match an existing space!
     3$ ibmcloud fn action create hello-wsk --docker mephi42/hello-wsk
 
-    4$ docker build -t mephi42/hello-wsk .
+    4$ docker build -t mephi42/hello-wsk image
     5$ docker run -it --rm mephi42/hello-wsk /action/exec '{"foo": "bar"}'
     6$ docker push mephi42/hello-wsk
     7$ ibmcloud fn action update hello-wsk --docker mephi42/hello-wsk

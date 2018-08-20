@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+import igraph
+import json
+import os
+import sys
+
+
+if len(sys.argv) > 1:
+    j = json.loads(sys.argv[1])
+else:
+    j = json.load(sys.stdin)
+g = igraph.load(os.path.join(os.path.dirname(__file__), 'simple.gml'))
+paths = []
+for k, v in j.items():
+    k = g.vs.find(label=k)
+    v = g.vs.find(label=v)
+    paths.append(g.get_shortest_paths(k, v)[0])
+json.dump({'paths': paths}, sys.stdout)
+print('')

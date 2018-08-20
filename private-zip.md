@@ -14,7 +14,7 @@ Code must be compatible with the default `openwhisk/dockerskeleton` image and [b
 
     1$ ibmcloud fn action create hello-wsk --docker openwhisk/dockerskeleton
 
-    2$ (cd fs/action && zip -r - *) >binary.zip
+    2$ (cd image/fs/action && zip -r - *) >binary.zip
     3$ ibmcloud fn action update hello-wsk binary.zip --docker openwhisk/dockerskeleton
     4$ ibmcloud fn action invoke --result hello-wsk --param foo bar
     # goto 2

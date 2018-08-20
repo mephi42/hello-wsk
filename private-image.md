@@ -15,5 +15,5 @@ Does not work yet due to OpenWhisk technical limitations.
     $ ibmcloud cr login
     $ ibmcloud cr namespace-add mephi42
 
-    $ docker build -t registry.ng.bluemix.net/mephi42/hello-wsk .
+    $ docker build -t registry.ng.bluemix.net/mephi42/hello-wsk image
     $ docker push registry.ng.bluemix.net/mephi42/hello-wsk
